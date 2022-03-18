@@ -14,7 +14,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<version>0.0.1-SNAPSHOT</version>
 	<groupId>com.weather</groupId>
-	<artifactId>prediction</artifactId>
+	<artifactId>prediction</artifactId> 
 
 	<name>Fabric8 :: Quickstarts :: Spring-Boot :: WebMVC</name>
 	<description>Shows how to use Spring Boot with WebMVC in the Java Container</description>
