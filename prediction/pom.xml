@@ -112,11 +112,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<finalName>enrollment-service</finalName>
-					<outputDirectory>
-						${target.build.location}
-					</outputDirectory>
+					<mainClass>com.weather.prediction.WeatherPredictionApplication</mainClass>
 				</configuration>
+				<executions>
+                        <execution>
+            <goals>
+                <goal>repackage</goal>
+            </goals>
+        </execution>
+    </executions>
 			</plugin>
 		</plugins>
 	</build>
