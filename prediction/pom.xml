@@ -16,8 +16,8 @@
 	<groupId>com.weather</groupId>
 	<artifactId>prediction</artifactId> 
 
-	<name>Fabric8 :: Quickstarts :: Spring-Boot :: WebMVC</name>
-	<description>Shows how to use Spring Boot with WebMVC in the Java Container</description>
+	<name>Weather Forecast</name>
+	<description>Weather Forecast</description>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -30,8 +30,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<version.compiler.plugin>2.3.1</version.compiler.plugin>
 		<version.maven-bundle-plugin>2.3.7</version.maven-bundle-plugin>
-		<maven.compiler.target>1.7</maven.compiler.target>
-		<maven.compiler.source>1.7</maven.compiler.source>
 	</properties>
 
 
@@ -76,7 +74,6 @@
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
-			<version>2.8.5</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
