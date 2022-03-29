@@ -6,7 +6,7 @@ pipeline {
         IMAGE_REPO_NAME="ecr-jenkins-pipeline"
         IMAGE_TAG="latest"
         REMOTE_USER="ec2-user"
-        REMOTE_HOST="ip-172-31-27-56.ec2.internal"
+        REMOTE_HOST="ip-172-31-91-147.ec2.internal"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
     }
    
