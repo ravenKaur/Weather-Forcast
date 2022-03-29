@@ -49,7 +49,7 @@ pipeline {
     stage('Deploy') {
      steps{  
          script {
-                sh 'ssh -tt ${REMOTE_USER}@${REMOTE_HOST}'
+                sh 'ssh -tty ${REMOTE_USER}@${REMOTE_HOST}'
                 sh "docker pull ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
                 sh "docker run -d -p 8080:8080 ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
          }
