@@ -5,8 +5,6 @@ pipeline {
         AWS_DEFAULT_REGION="us-east-1" 
         IMAGE_REPO_NAME="ecr-jenkins-pipeline"
         IMAGE_TAG="latest"
-        REMOTE_USER="ec2-user"
-        REMOTE_HOST="ip-172-31-91-147"
         REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
     }
    
@@ -49,9 +47,8 @@ pipeline {
     stage('Deploy') {
      steps{  
          script {
-                sh "ssh -t ${REMOTE_USER}@${REMOTE_HOST}"
                 sh "docker pull ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
-                sh "docker run -d -p 8080:8080 ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
+                sh "docker run -d -p 8082:8082 ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"
          }
         }
       }
