@@ -1,8 +1,5 @@
 package com.weather.prediction.controller;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public class Data<T> {
 	/** The records. */
 	private T records;

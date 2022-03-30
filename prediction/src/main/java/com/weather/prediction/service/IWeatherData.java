@@ -7,5 +7,6 @@ import com.weather.prediction.modal.WeatherForecastResponse;
 
 public interface IWeatherData {
 
-	public WeatherForecastResponse setWeatherData(List<WeatherDataList> list);
+	public List<WeatherForecastResponse> setWeatherData(List<WeatherDataList> list);
+
 }

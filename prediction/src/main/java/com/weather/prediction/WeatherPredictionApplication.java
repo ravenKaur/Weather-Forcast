@@ -1,5 +1,4 @@
 /**
- *  Copyright 2005-2014 Red Hat, Inc.
  *
  *  Red Hat licenses this file to you under the Apache License, version
  *  2.0 (the "License"); you may not use this file except in compliance
@@ -20,15 +19,15 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 @Configuration
-@EnableJpaRepositories
 @Import(RepositoryRestMvcConfiguration.class)
 @SpringBootApplication
+@EnableCircuitBreaker
 public class WeatherPredictionApplication extends SpringBootServletInitializer {
 	
 	@Override

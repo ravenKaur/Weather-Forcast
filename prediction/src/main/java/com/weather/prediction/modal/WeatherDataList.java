@@ -1,7 +1,6 @@
 package com.weather.prediction.modal;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 import lombok.Getter;
