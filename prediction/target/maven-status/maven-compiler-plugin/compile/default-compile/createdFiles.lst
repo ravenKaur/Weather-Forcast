@@ -15,9 +15,7 @@ com/weather/prediction/config/EnableSwaggerDoc.class
 com/weather/prediction/utility/GeneralWeatherConstants.class
 com/weather/prediction/service/IWeatherData.class
 com/weather/prediction/service/IWeatherStation.class
-com/weather/prediction/utility/Main.class
 com/weather/prediction/modal/Wind.class
-com/weather/prediction/modal/WeatherForecast.class
 com/weather/prediction/config/SwaggerConfig.class
 com/weather/prediction/service/impl/WeatherStationImpl.class
 com/weather/prediction/controller/ReturnEnitity.class

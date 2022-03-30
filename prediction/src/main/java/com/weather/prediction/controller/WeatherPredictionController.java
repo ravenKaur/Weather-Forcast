@@ -37,7 +37,7 @@ public class WeatherPredictionController {
 		ReturnEnitity returnConvertor = null;
 		try {
 			returnConvertor = weatherStation.getWeatherForecast(cityName, count);
-			Link selfLink = WebMvcLinkBuilder.linkTo(WeatherPredictionController.class).slash("/swagger-ui").slash("/")
+			Link selfLink = WebMvcLinkBuilder.linkTo(WeatherPredictionController.class).slash("/swagger-ui/").slash("/")
 					.withSelfRel();
 			if (Objects.nonNull(returnConvertor)) {
 				returnConvertor.add(selfLink);
