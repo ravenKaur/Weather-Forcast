@@ -51,6 +51,6 @@ pipeline {
                 sh "docker run -d -p 9090:9090 ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}”
          }
         }
-}
+      }
     }
 }
